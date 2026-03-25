@@ -15,3 +15,11 @@ A fictional dog adoption centre website for the web design module.
 - My dogs
 - Pictures from friends and family
 - free use and Adobe stock images 
+
+Things left to do:
+Adopt a Dog page and styling
+General care info: write elderly dog, adult dog info, page, and styling
+autenticate: last 2 pages
+have w3c autentication in pages
+change the contact us page triangle
+upload the project to moodle
