@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sligo Dog Adoption Centre — get in touch with our team.">
+  <meta name="author" content="Patryk Milaniak">
+  <meta name="keywords" content="dog adoption, Sligo, rescue dogs">
+  <title>Contact Us | Sligo Dog Adoption Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Adopt A Dog Logo"></a>
+      <span>Sligo Dog Adoption Centre</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adoption.html">Adopt a Dog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+      <li><a href="care.html">General Care Info</a></li>
+    </ul>
+  </nav>
+
+  <header class="contact-hero">
+    <div>
+      <h1>Contact Us</h1>
+      <p>Interested in one of our dogs or have a question? We'd love to hear from you.</p>
+    </div>
+  </header>
+
+  <div class="contact-wrapper" data-aos="fade-up">
+    <div class="contact-details"> <!-- For each section of the details-->
+      <h2>Get In Touch</h2>
+      <div class="detail-item">
+        <span>Email</span>
+        <p><a href="mailto:staff@sligodogadoption.ie">staff@sligodogadoption.ie</a></p>
+      </div>
+      <div class="detail-item">
+        <span>Phone</span>
+        <p>078 234 2342</p>
+      </div>
+      <div class="detail-item">
+        <span>Address</span>
+        <p>Ash Lane, Sligo,<br>F91 YW50, Ireland</p>
+      </div>
+
+      <div class="contact-map"><!--Include google maps  -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18635.688859288828!2d-8.479063854542582!3d54.27811024471839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee84fa5eb1b95%3A0x751d4c0a30fab5a4!2sBallytivnan%2C%20Sligo%2C%20F91%20YW50!5e0!3m2!1sen!2sie!4v1776034397544!5m2!1sen!2sie"
+          width="100%"
+          height="200"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Sligo Dog Adoption Centre location">
+        </iframe>
+      </div>
+
+      <div class="detail-item">
+        <span>Opening Hours</span>
+        <p>Monday - Saturday: 9am - 8pm<br>Sunday: Closed</p>
+      </div>
+    </div>
+
+    <div class="contact-form" id="contact-form"><!--Include a contact form --> <!-- Include Appropriate use of  CSS Id  selectors--> <!--For each part of the form div-->
+      <h2>Send Us a Message</h2>
+      <form action="contact.html" method="get"><!--Verify data collected on contact form, using get and data attached to URL -->
+        <div class="form-group">
+          <label for="name">Name <span style="color:red">*</span></label><!--include red -->
+          <input type="text" id="name" name="name" placeholder="Your full name" required><!-- Include Appropriate use of  CSS Id  selectors-->
+        </div>
+        <div class="form-group"><!--Include Appropriate use of  CSS Class selectors-->
+          <label for="email">Email <span style="color:red">*</span></label><!--include red -->
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason of Contact <span style="color:red">*</span></label><!--include red -->
+          <select id="reason" name="reason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option value="adoption">Adoption Enquiry</option>
+            <option value="visit">Schedule a Visit</option>
+            <option value="returning">Returning a Dog</option>
+            <option value="general">General Question</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span style="color:red">*</span></label>
+          <textarea id="message" name="message" placeholder="Tell us how we can help…" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+  <a href="#" class="back-to-top">↑ Back to Top</a><!--Include Internal Links eg from top to bottom of page and External Links -->
+  <div class="footer-wrapper">
+    <div class="footer-col">
+      <h3>Sligo Dog Adoption Centre</h3>
+      <p>SDA Centre was founded in 2006 and is dedicated to saving dogs being abandoned on the streets and rescuing those who already are. We operate under a simple principle: every dog deserves a safe home where they are loved, protected from abuse, and given the chance to the life they deserve.</p>
+    </div>
+    <div class="footer-right">
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="adoption.html">Adopt a Dog</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="care.html">General Care Info</a>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.x.com">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <p class="copy">Sligo Dog Adoption © 2025</p>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+
+</body>
+</html>

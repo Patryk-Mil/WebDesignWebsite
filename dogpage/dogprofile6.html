@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adopt Scout — a friendly Sheepdog looking for a loving home at Sligo Dog Adoption Centre.">
+  <meta name="keywords" content="dog adoption, Sligo, Sheepdog, rescue dog, adopt">
+  <meta name="author" content="Patryk Milaniak">
+  <title>Scout | Sligo Dog Adoption Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+   
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Adopt A Dog Logo"></a>
+      <span>Sligo Dog Adoption Centre</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adoption.html" class="active">Adopt a Dog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="care.html">General Care Info</a></li>
+    </ul>
+  </nav>
+
+  <header class="profile-hero">
+    <div>
+      <h1>Meet Scout</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile-wrapper" data-aos="fade-up">
+
+      <!-- Image Gallery -->
+      <div class="profile-gallery" id="gallery">
+        <img class="gallery-main" src="images/scout1.png" alt="Scout photo 1" id="mainImg">
+        <div class="gallery-controls">
+          <button class="gallery-btn" id="prevBtn">&#8592;</button>
+          <div class="gallery-dots">
+            <div class="dot active" onclick="goTo(0)"></div>
+            <div class="dot" onclick="goTo(1)"></div>
+            <div class="dot" onclick="goTo(2)"></div>
+          </div>
+          <button class="gallery-btn" id="nextBtn">&#8594;</button>
+        </div>
+        <div class="gallery-thumbs">
+          <img src="images/scout1.png" alt="Scout 1" class="active" onclick="goTo(0)">
+          <img src="images/scout2.png" alt="Scout 2" onclick="goTo(1)">
+          <img src="images/scout3.png" alt="Scout 3" onclick="goTo(2)">
+        </div>
+      </div>
+
+      <!-- Dog Info -->
+      <div class="profile-info">
+
+        <article class="dog-article" id="dog-profile">
+          <h2>Scout</h2>
+          <span class="dog-breed-tag">SheepDog</span>
+          <p>Scout came into our care after the passing of the farmer he had lived with his whole life, leaving him without the steady routine and companionship he was so devoted to. Even through the confusion of losing his home, he has shown nothing but gentleness, patience, and that classic Sheepdog loyalty that makes him such a special companion. He loves calm walks, watching over the yard like it's still his job, and settling beside someone in the evenings as if grateful for every bit of company. Scout is wonderful with children, steady around other dogs, and has a soft, dependable nature that makes him a perfect fit for a quiet, loving home. He is fully vaccinated, microchipped, and neutered, and after several months with us, he's ready to find a family who will give him the stability and affection he's been missing.</p>
+        </article>
+
+        <aside class="dog-stats">
+          <h3>Quick Info</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span>Breed</span>
+              <p>Sheepdog</p>
+            </div>
+            <div class="stat-item">
+              <span>Age</span>
+              <p>6 Years</p>
+            </div>
+            <div class="stat-item">
+              <span>Size</span>
+              <p>Large</p>
+            </div>
+            <div class="stat-item">
+              <span>Gender</span>
+              <p>Female</p>
+            </div>
+            <div class="stat-item">
+              <span>Location</span>
+              <p>Sligo, Ireland</p>
+            </div>
+            <div class="stat-item">
+              <span>Status</span>
+              <p style="color: green; font-weight: 600;">Available</p>
+            </div>
+          </div>
+        </aside>
+
+        <a href="contact.html" class="adopt-btn">Enquire About Adopting</a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+    <div class="footer-wrapper">
+      <div class="footer-col">
+        <h3>Sligo Dog Adoption Centre</h3>
+        <p>SDA Centre was founded in 2006 and is dedicated to saving dogs being abandoned on the streets and rescuing those who already are. We operate under a simple principle: every dog deserves a safe home where they are loved, protected from abuse, and given the chance to the life they deserve.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <a href="index.html">Home</a>
+          <a href="adoption.html">Adopt a Dog</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="care.html">General Care Info</a>
+        </div>
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.x.com">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">Sligo Dog Adoption &copy; 2025</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script>
+    const images = [
+      { src: 'images/scout1.png', alt: 'Scout photo 1' },
+      { src: 'images/scout2.png', alt: 'Scout photo 2' },
+      { src: 'images/scout3.png', alt: 'Scout photo 3' }
+    ];
+    let current = 0;
+
+    function goTo(index) {
+      current = index;
+      const mainImg = document.getElementById('mainImg');
+      mainImg.src = images[current].src;
+      mainImg.alt = images[current].alt;
+      document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+      document.querySelectorAll('.gallery-thumbs img').forEach((t, i) => t.classList.toggle('active', i === current));
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      goTo((current - 1 + images.length) % images.length);
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      goTo((current + 1) % images.length);
+    });
+  </script>
+
+</body>
+</html>

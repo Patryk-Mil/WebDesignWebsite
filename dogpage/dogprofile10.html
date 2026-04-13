@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adopt Archie — a friendly Cocker Spaniel looking for a loving home at Sligo Dog Adoption Centre.">
+  <meta name="keywords" content="dog adoption, Sligo, Cocker Spaniel, rescue dog, adopt">
+  <meta name="author" content="Patryk Milaniak">
+  <title>Archie | Sligo Dog Adoption Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+   
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Adopt A Dog Logo"></a>
+      <span>Sligo Dog Adoption Centre</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adoption.html" class="active">Adopt a Dog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="care.html">General Care Info</a></li>
+    </ul>
+  </nav>
+
+  <header class="profile-hero">
+    <div>
+      <h1>Meet Archie</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile-wrapper" data-aos="fade-up">
+
+      <!-- Image Gallery -->
+      <div class="profile-gallery" id="gallery">
+        <img class="gallery-main" src="images/archie1.png" alt="Archie photo 1" id="mainImg">
+        <div class="gallery-controls">
+          <button class="gallery-btn" id="prevBtn">&#8592;</button>
+          <div class="gallery-dots">
+            <div class="dot active" onclick="goTo(0)"></div>
+            <div class="dot" onclick="goTo(1)"></div>
+            <div class="dot" onclick="goTo(2)"></div>
+          </div>
+          <button class="gallery-btn" id="nextBtn">&#8594;</button>
+        </div>
+        <div class="gallery-thumbs">
+          <img src="images/archie1.png" alt="Archie 1" class="active" onclick="goTo(0)">
+          <img src="images/archie2.png" alt="Archie 2" onclick="goTo(1)">
+          <img src="images/archie3.png" alt="Archie 3" onclick="goTo(2)">
+        </div>
+      </div>
+
+      <!-- Dog Info -->
+      <div class="profile-info">
+
+        <article class="dog-article" id="dog-profile">
+          <h2>Archie</h2>
+          <span class="dog-breed-tag">Cocker Spaniel</span>
+          <p>Archie was rushed into our shelter at just three months old after neighbours found him trembling outside during a late-night storm in 2026, left alone when his overwhelmed owner packed up and disappeared without taking him along. Even after such a frightening start, he's shown a brave, affectionate spirit, clinging to anyone who offers him warmth or a gentle hand. He loves tiny bursts of play, chasing raindrops, and curling into a tight ball against someone's chest the moment he gets tired. Archie is gentle with children, curious around other dogs, and has a soft, trusting nature that makes him a perfect match for a patient, loving home ready to guide a young pup. He is fully vaccinated, microchipped, and neutered, and after weeks of rebuilding his confidence, he's ready for the safe, steady forever family he never had.</p>
+        </article>
+
+        <aside class="dog-stats">
+          <h3>Quick Info</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span>Breed</span>
+              <p>Cocker SPaniel</p>
+            </div>
+            <div class="stat-item">
+              <span>Age</span>
+              <p>3 Months</p>
+            </div>
+            <div class="stat-item">
+              <span>Size</span>
+              <p>Small</p>
+            </div>
+            <div class="stat-item">
+              <span>Gender</span>
+              <p>Male</p>
+            </div>
+            <div class="stat-item">
+              <span>Location</span>
+              <p>Sligo, Ireland</p>
+            </div>
+            <div class="stat-item">
+              <span>Status</span>
+              <p style="color: rgb(128, 0, 0); font-weight: 600;">Unavailable</p>
+            </div>
+          </div>
+        </aside>
+
+        <a href="contact.html" class="adopt-btn">Enquire About Adopting</a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+    <div class="footer-wrapper">
+      <div class="footer-col">
+        <h3>Sligo Dog Adoption Centre</h3>
+        <p>SDA Centre was founded in 2006 and is dedicated to saving dogs being abandoned on the streets and rescuing those who already are. We operate under a simple principle: every dog deserves a safe home where they are loved, protected from abuse, and given the chance to the life they deserve.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <a href="index.html">Home</a>
+          <a href="adoption.html">Adopt a Dog</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="care.html">General Care Info</a>
+        </div>
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.x.com">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">Sligo Dog Adoption &copy; 2025</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script>
+    const images = [
+      { src: 'images/archie1.png', alt: 'Archie photo 1' },
+      { src: 'images/archie1.png', alt: 'Archie photo 2' },
+      { src: 'images/archie1.png', alt: 'Archie photo 3' }
+    ];
+    let current = 0;
+
+    function goTo(index) {
+      current = index;
+      const mainImg = document.getElementById('mainImg');
+      mainImg.src = images[current].src;
+      mainImg.alt = images[current].alt;
+      document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+      document.querySelectorAll('.gallery-thumbs img').forEach((t, i) => t.classList.toggle('active', i === current));
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      goTo((current - 1 + images.length) % images.length);
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      goTo((current + 1) % images.length);
+    });
+  </script>
+
+</body>
+</html>
