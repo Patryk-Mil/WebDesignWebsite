@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adopt Milo — a friendly  Beagle looking for a loving home at Sligo Dog Adoption Centre.">
+  <meta name="keywords" content="dog adoption, Sligo,  Beagle, rescue dog, adopt">
+  <meta name="author" content="Patryk Milaniak">
+  <title>Milo | Sligo Dog Adoption Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+     
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Adopt A Dog Logo"></a>
+      <span>Sligo Dog Adoption Centre</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adoption.html" class="active">Adopt a Dog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="care.html">General Care Info</a></li>
+    </ul>
+  </nav>
+
+  <header class="profile-hero">
+    <div>
+      <h1>Meet Milo</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile-wrapper" data-aos="fade-up">
+
+      <!-- Image Gallery --> <!--Additional Features  -->
+      <div class="profile-gallery" id="gallery"><!--for the part on the side with image library-->
+        <img class="gallery-main" src="images/milo1.png" alt="Milo photo 1" id="mainImg">
+        <div class="gallery-controls">
+          <button class="gallery-btn" id="prevBtn">&#8592;</button>
+          <div class="gallery-dots">
+            <div class="dot active" onclick="goTo(0)"></div><!--to  see which one is active-->
+            <div class="dot" onclick="goTo(1)"></div>
+            <div class="dot" onclick="goTo(2)"></div>
+          </div>
+          <button class="gallery-btn" id="nextBtn">&#8594;</button>
+        </div>
+        <div class="gallery-thumbs"><!--for the small images-->
+          <img src="images/milo1.png" alt="Milo 1" class="active" onclick="goTo(0)">
+          <img src="images/milo2.png" alt="Milo 2" onclick="goTo(1)">
+          <img src="images/milo3.png" alt="Milo 3" onclick="goTo(2)">
+        </div>
+      </div>
+
+      <!-- Dog Info -->
+      <div class="profile-info"> <!--info om the side-->
+
+        <article class="dog-article" id="dog-profile"><!--Include an article ,  section and aside sections-->
+          <h2>Milo</h2>
+          <span class="dog-breed-tag">Beagle</span>
+          <p>Milo was brought into our shelter after being found wandering near the outskirts of Sligo town in the summer of 2023. Even though he arrived a little shaken, he quickly proved to be one of the most affectionate and easy-going dogs we've had the joy of caring for. He loves long walks, following every scent with his tail wagging, and he's always ready for a game of fetch or a bit of playtime. In the evenings, he's happiest curled up beside someone, enjoying the comfort of a quiet home. Milo is fantastic with children and gets along well with other dogs, making him a wonderful fit for almost any family. He is fully vaccinated, microchipped, and neutered, and after more than a year with us, heSco'uts patiently waiting for the loving forever home he deserves.</p>
+        </article>
+
+        <aside class="dog-stats"><!--Include an article ,  section and aside sections-->
+          <h3>Quick Info</h3>
+          <div class="stats-grid"><!--Each quick info item-->
+            <div class="stat-item">
+              <span>Breed</span>
+              <p>Beagle</p>
+            </div>
+            <div class="stat-item">
+              <span>Age</span>
+              <p>4 Years</p>
+            </div>
+            <div class="stat-item">
+              <span>Size</span>
+              <p>Medium</p>
+            </div>
+            <div class="stat-item">
+              <span>Gender</span>
+              <p>Male</p>
+            </div>
+            <div class="stat-item">
+              <span>Location</span>
+              <p>Sligo, Ireland</p>
+            </div>
+            <div class="stat-item">
+              <span>Status</span>
+              <p style="color: green; font-weight: 600;">Available</p> <!--Appropriate Example  using of  inline Styling -->
+            </div>
+          </div>
+        </aside>
+
+        <a href="contact.html" class="adopt-btn">Enquire About Adopting</a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+    <div class="footer-wrapper">
+      <div class="footer-col">
+        <h3>Sligo Dog Adoption Centre</h3>
+        <p>SDA Centre was founded in 2006 and is dedicated to saving dogs being abandoned on the streets and rescuing those who already are. We operate under a simple principle: every dog deserves a safe home where they are loved, protected from abuse, and given the chance to the life they deserve.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <a href="index.html">Home</a>
+          <a href="adoption.html">Adopt a Dog</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="care.html">General Care Info</a>
+        </div>
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.x.com">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">Sligo Dog Adoption &copy; 2025</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--Additional Features  -->
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script>//Additional Features 
+    const images = [
+      { src: 'images/milo1.png', alt: 'Milo photo 1' },
+      { src: 'images/milo2.png', alt: 'Milo photo 2' },
+      { src: 'images/milo3.png', alt: 'Milo photo 3' }
+    ];
+    let current = 0;
+
+    function goTo(index) {
+      current = index;
+      const mainImg = document.getElementById('mainImg');
+      mainImg.src = images[current].src;
+      mainImg.alt = images[current].alt;
+      document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+      document.querySelectorAll('.gallery-thumbs img').forEach((t, i) => t.classList.toggle('active', i === current));
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      goTo((current - 1 + images.length) % images.length);
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      goTo((current + 1) % images.length);
+    });
+  </script>
+
+</body>
+</html>
